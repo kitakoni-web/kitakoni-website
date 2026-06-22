@@ -376,3 +376,60 @@
     padding: 26px;
   }
 }
+
+
+/* v1.0.7 HERO: logo remains + B font for brand copy */
+.hero__content{
+  text-align:center;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.hero__brand-logo{
+  width:min(360px,56vw);
+  margin:0 auto 22px;
+  filter:drop-shadow(0 0 7px rgba(255,230,0,.20));
+}
+
+.hero h1{
+  font-family:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",YuMincho,"Noto Serif JP",serif;
+  font-weight:600;
+  font-size:clamp(36px,5.1vw,70px);
+  line-height:1.36;
+  letter-spacing:.045em;
+  margin:.08em 0 .34em;
+  text-align:center;
+  font-feature-settings:"palt" 1;
+  text-shadow:0 3px 18px rgba(0,0,0,.58),0 0 1px rgba(255,255,255,.22);
+}
+
+.hero__lead{
+  max-width:560px;
+  text-align:center;
+  color:#f2ead0;
+  font-size:clamp(14px,1.34vw,17px);
+  line-height:1.82;
+  letter-spacing:.075em;
+  font-weight:700;
+  text-shadow:0 2px 12px rgba(0,0,0,.58);
+}
+
+.status-list{
+  justify-content:center;
+}
+
+.hero__actions{
+  justify-content:center;
+}
+
+@media(max-width:900px){
+  .hero__brand-logo{width:min(280px,60vw);margin-bottom:20px;}
+  .hero h1{font-size:clamp(32px,8vw,50px);line-height:1.38;letter-spacing:.035em;}
+}
+
+@media(max-width:520px){
+  .hero__brand-logo{width:min(238px,68vw);margin-bottom:18px;}
+  .hero h1{font-size:31px;line-height:1.42;letter-spacing:.025em;}
+  .hero__lead{font-size:13px;line-height:1.78;letter-spacing:.045em;}
+}
