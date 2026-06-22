@@ -225,3 +225,62 @@
 .section-heading p:not(.section-kicker) {
   margin-top: 18px;
 }
+
+
+/* v1.0.3 heading underline removal + SNS button interaction */
+.section-heading h2::after,
+.section-heading--center h2::after {
+  display: none !important;
+}
+
+.sns-links a {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+  padding: 0 18px;
+  border: 1px solid var(--line);
+  background: rgba(0,0,0,.34);
+  color: #fff1a5;
+  font-size: 13px;
+  font-weight: 850;
+  letter-spacing: .06em;
+  overflow: hidden;
+  transition: color .28s ease, border-color .28s ease, background .28s ease, transform .28s ease, box-shadow .28s ease;
+  clip-path: polygon(10px 0,100% 0,100% calc(100% - 10px),calc(100% - 10px) 100%,0 100%,0 10px);
+}
+
+.sns-links a::after {
+  content: "";
+  position: absolute;
+  left: -40%;
+  top: 50%;
+  width: 34%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--yellow), transparent);
+  opacity: 0;
+  transform: translateY(-50%);
+  transition: left .45s ease, opacity .2s ease;
+  box-shadow: 0 0 10px rgba(255,230,0,.55);
+}
+
+.sns-links a:hover,
+.sns-links a:focus-visible {
+  color: var(--yellow);
+  border-color: rgba(255,230,0,.72);
+  background: rgba(255,230,0,.08);
+  transform: translateY(-2px);
+  box-shadow: 0 12px 28px rgba(0,0,0,.26);
+  outline: none;
+}
+
+.sns-links a:hover::after,
+.sns-links a:focus-visible::after {
+  left: 104%;
+  opacity: 1;
+}
+
+.sns-links a:active {
+  transform: translateY(0);
+}
