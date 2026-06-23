@@ -871,3 +871,37 @@
   .hero-info__icon svg{stroke-width:4.2;}
   .hero-info__text{align-items:center;text-align:center;gap:1px;}
 }
+
+/* v1.1.5 hero pictogram icons extracted from original KITAKONI top visual */
+.hero-info__icon{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+.hero-info__icon img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  filter:drop-shadow(0 0 10px rgba(255,230,0,.22));
+}
+.hero-info__icon svg{
+  display:none !important;
+}
+.hero-info__icon--can{
+  width:clamp(46px,4.4vw,64px) !important;
+  height:clamp(70px,6.8vw,92px) !important;
+}
+.hero-info__icon--bag{
+  width:clamp(50px,4.8vw,68px) !important;
+  height:clamp(64px,6.2vw,88px) !important;
+}
+.hero-info__icon--glass{
+  width:clamp(66px,6.2vw,92px) !important;
+  height:clamp(58px,5.4vw,78px) !important;
+}
+@media(max-width:720px){
+  .hero-info__icon--can{width:34px !important;height:48px !important;}
+  .hero-info__icon--bag{width:36px !important;height:46px !important;}
+  .hero-info__icon--glass{width:52px !important;height:42px !important;}
+}
