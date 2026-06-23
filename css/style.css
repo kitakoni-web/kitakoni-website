@@ -443,3 +443,51 @@
   .hero h1{font-size:34px;line-height:1.28;letter-spacing:.02em}
   .hero__lead{font-size:13px;letter-spacing:.08em}
 }
+
+/* v1.1.0 HERO/nav refinement: opening equals top page */
+.site-header{
+  opacity:0;
+  transform:translateY(-100%);
+  pointer-events:none;
+  background:rgba(0,0,0,0);
+  border-bottom-color:transparent;
+  transition:opacity .34s ease, transform .34s ease, background .25s ease, border-color .25s ease;
+}
+.site-header.is-scrolled{
+  opacity:1;
+  transform:translateY(0);
+  pointer-events:auto;
+}
+
+.hero h1{
+  letter-spacing:-.075em;
+  line-height:1.08;
+  text-wrap:balance;
+}
+.hero-copy{
+  display:block;
+}
+.hero-copy__line{
+  display:block;
+  white-space:nowrap;
+}
+.hero-copy__line--top{
+  font-size:.82em;
+  letter-spacing:-.085em;
+  transform:translateX(-.02em);
+}
+.hero-copy__line--main{
+  font-size:1.08em;
+  letter-spacing:-.105em;
+  margin-top:.02em;
+  transform:translateX(.02em);
+}
+.hero__lead{
+  margin-top:clamp(16px,2vw,24px);
+}
+
+@media(max-width:520px){
+  .hero h1{letter-spacing:-.055em;line-height:1.12}
+  .hero-copy__line--top{font-size:.84em;letter-spacing:-.055em}
+  .hero-copy__line--main{font-size:1.03em;letter-spacing:-.07em}
+}
