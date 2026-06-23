@@ -378,12 +378,35 @@
 }
 
 
-/* v1.0.7 HERO: logo remains + B font for brand copy */
-.hero__content{
+/* v1.0.8 HERO final: center logo remains + B font copy */
+.opening__logo{
+  width:min(360px,56vw) !important;
+  max-width:none;
+}
+.opening__inner{
+  animation:kitakoniBrandIntroCenter 2.15s cubic-bezier(.18,.78,.18,1) forwards !important;
+}
+@keyframes kitakoniBrandIntroCenter{
+  0%{opacity:1;transform:scale(3.3) translateZ(0);filter:blur(1.2px)}
+  9%{opacity:1;transform:scale(3.3) translateZ(0);filter:blur(.55px)}
+  88%{opacity:1;transform:scale(1) translateZ(0);filter:blur(0)}
+  100%{opacity:1;transform:scale(1) translateZ(0);filter:blur(0)}
+}
+
+.hero__content,
+.hero__content.reveal{
+  position:relative;
+  z-index:2;
+  width:min(var(--max),calc(100% - 40px));
+  margin:0 auto;
+  padding-top:var(--header);
   text-align:center;
   display:flex;
   flex-direction:column;
   align-items:center;
+  opacity:1 !important;
+  transform:none !important;
+  transition:none !important;
 }
 
 .hero__brand-logo{
@@ -415,20 +438,35 @@
   text-shadow:0 2px 12px rgba(0,0,0,.58);
 }
 
-.status-list{
-  justify-content:center;
-}
-
+.status-list,
 .hero__actions{
   justify-content:center;
 }
 
+.hero__brand-logo,
+.hero h1,
+.hero__lead,
+.status-list,
+.hero__actions{
+  animation:heroCopySettle .72s ease both;
+}
+.hero h1{animation-delay:.18s;}
+.hero__lead{animation-delay:.26s;}
+.status-list{animation-delay:.34s;}
+.hero__actions{animation-delay:.40s;}
+@keyframes heroCopySettle{
+  from{opacity:0;transform:translateY(10px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
 @media(max-width:900px){
+  .opening__logo{width:min(280px,60vw) !important;}
   .hero__brand-logo{width:min(280px,60vw);margin-bottom:20px;}
   .hero h1{font-size:clamp(32px,8vw,50px);line-height:1.38;letter-spacing:.035em;}
 }
 
 @media(max-width:520px){
+  .opening__logo{width:min(238px,68vw) !important;}
   .hero__brand-logo{width:min(238px,68vw);margin-bottom:18px;}
   .hero h1{font-size:31px;line-height:1.42;letter-spacing:.025em;}
   .hero__lead{font-size:13px;line-height:1.78;letter-spacing:.045em;}
