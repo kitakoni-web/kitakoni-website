@@ -2015,3 +2015,77 @@
     letter-spacing:-.06em !important;
   }
 }
+
+/* v1.2.9: center hero info blocks and align label text */
+.hero-info--v128{
+  width:min(820px,100%) !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  justify-items:center !important;
+  align-items:start !important;
+  gap:clamp(18px,2.8vw,40px) !important;
+}
+.hero-info--v128 .hero-info__item{
+  width:100% !important;
+  justify-content:center !important;
+  align-items:center !important;
+  text-align:center !important;
+}
+.hero-info--v128 .hero-info__text{
+  width:100% !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  text-align:center !important;
+  gap:10px !important;
+}
+.hero-info--v128 .hero-info__text em{
+  width:100% !important;
+  text-align:center !important;
+  font-size:clamp(15px,1.48vw,22px) !important;
+  font-weight:900 !important;
+  letter-spacing:.015em !important;
+}
+.hero-info--v128 .hero-info__label{
+  width:min(100%,218px) !important;
+  min-width:0 !important;
+  min-height:46px !important;
+  padding:0 16px !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  line-height:1.12 !important;
+  margin:0 auto !important;
+}
+.hero-info--v128 .hero-info__item:nth-child(1) .hero-info__label{
+  min-height:54px !important;
+}
+.hero-info--v128 .hero-info__item:nth-child(2) .hero-info__label,
+.hero-info--v128 .hero-info__item:nth-child(3) .hero-info__label{
+  min-height:46px !important;
+}
+@media(max-width:900px){
+  .hero-info--v128{
+    width:min(520px,100%) !important;
+    grid-template-columns:1fr !important;
+    justify-items:center !important;
+    gap:13px !important;
+  }
+  .hero-info--v128 .hero-info__text{
+    gap:7px !important;
+  }
+  .hero-info--v128 .hero-info__text em{
+    font-size:15px !important;
+  }
+  .hero-info--v128 .hero-info__label{
+    width:min(100%,230px) !important;
+    min-height:40px !important;
+    padding:0 14px !important;
+  }
+  .hero-info--v128 .hero-info__item:nth-child(1) .hero-info__label{
+    min-height:48px !important;
+  }
+}
+@media(max-width:390px){
+  .hero-info--v128 .hero-info__text em{font-size:14px !important;}
+  .hero-info--v128 .hero-info__label{width:min(100%,214px) !important;font-size:9.6px !important;}
+}
