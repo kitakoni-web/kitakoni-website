@@ -1536,3 +1536,189 @@
     letter-spacing:.14em;
   }
 }
+
+
+/* v1.2.3 Brand icon cards: selected rounded-square icons */
+.hero-info{
+  width:min(980px,100%) !important;
+  gap:clamp(18px,2.8vw,42px) !important;
+}
+.hero-info__item{
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  padding:0 !important;
+}
+.hero-info__icon{
+  width:clamp(92px,8.4vw,132px) !important;
+  height:clamp(92px,8.4vw,132px) !important;
+  filter:drop-shadow(0 0 16px rgba(255,212,0,.24)) !important;
+}
+.hero-info__icon--can,
+.hero-info__icon--glass,
+.hero-info__icon--bag{
+  width:clamp(92px,8.4vw,132px) !important;
+  height:clamp(92px,8.4vw,132px) !important;
+}
+.hero-info__icon img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+}
+.hero-info__text{
+  margin-top:clamp(8px,1svh,12px) !important;
+  border:0 !important;
+  box-shadow:none !important;
+}
+.hero-info__text strong{
+  font-size:clamp(18px,1.8vw,28px) !important;
+  letter-spacing:.08em !important;
+}
+.hero-info__text span{
+  font-size:clamp(10px,.95vw,14px) !important;
+  line-height:1.22 !important;
+  letter-spacing:.075em !important;
+}
+.hero-info__text em{
+  display:none !important;
+}
+@media (max-height:760px) and (min-width:721px){
+  .hero-info__icon,
+  .hero-info__icon--can,
+  .hero-info__icon--glass,
+  .hero-info__icon--bag{
+    width:86px !important;
+    height:86px !important;
+  }
+}
+@media(max-width:720px){
+  .hero-info{gap:10px !important;}
+  .hero-info__icon,
+  .hero-info__icon--can,
+  .hero-info__icon--glass,
+  .hero-info__icon--bag{
+    width:72px !important;
+    height:72px !important;
+  }
+  .hero-info__text strong{font-size:11.5px !important;}
+  .hero-info__text span{font-size:8px !important;line-height:1.15 !important;}
+}
+@media(max-width:390px){
+  .hero-info__icon,
+  .hero-info__icon--can,
+  .hero-info__icon--glass,
+  .hero-info__icon--bag{
+    width:64px !important;
+    height:64px !important;
+  }
+}
+
+/* v1.2.4 exact selected icon cards: no text rules, no overlap */
+.hero-info{
+  width:min(880px,100%) !important;
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:clamp(16px,2.2vw,32px) !important;
+  margin-top:clamp(20px,2.8svh,30px) !important;
+  padding:0 !important;
+  border:0 !important;
+  background:transparent !important;
+}
+.hero-info__item{
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:clamp(10px,1.2vw,14px) !important;
+  min-height:auto !important;
+  padding:0 !important;
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  text-align:center !important;
+}
+.hero-info__icon,
+.hero-info__icon--can,
+.hero-info__icon--glass,
+.hero-info__icon--bag{
+  width:clamp(96px,8vw,124px) !important;
+  height:clamp(96px,8vw,124px) !important;
+  filter:drop-shadow(0 0 16px rgba(255,212,0,.18)) !important;
+  flex:0 0 auto !important;
+}
+.hero-info__icon img{
+  display:block !important;
+  width:100% !important;
+  height:100% !important;
+  object-fit:contain !important;
+}
+.hero-info__text{
+  width:100% !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:4px !important;
+  margin:0 !important;
+  padding:0 !important;
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  text-align:center !important;
+  line-height:1.2 !important;
+  white-space:normal !important;
+}
+.hero-info__text strong{
+  display:block !important;
+  color:#fff !important;
+  font-size:clamp(17px,1.55vw,24px) !important;
+  line-height:1 !important;
+  letter-spacing:.08em !important;
+  font-weight:950 !important;
+  margin:0 !important;
+}
+.hero-info__text span{
+  display:block !important;
+  color:#fff !important;
+  font-size:clamp(10px,.88vw,13px) !important;
+  line-height:1.28 !important;
+  letter-spacing:.08em !important;
+  font-weight:900 !important;
+  margin:0 !important;
+}
+.hero-info__text em{
+  display:none !important;
+}
+@media(max-width:720px){
+  .hero-info{
+    gap:10px !important;
+    margin-top:18px !important;
+  }
+  .hero-info__icon,
+  .hero-info__icon--can,
+  .hero-info__icon--glass,
+  .hero-info__icon--bag{
+    width:clamp(64px,20vw,78px) !important;
+    height:clamp(64px,20vw,78px) !important;
+  }
+  .hero-info__text strong{
+    font-size:clamp(10px,3.1vw,12px) !important;
+    letter-spacing:.04em !important;
+  }
+  .hero-info__text span{
+    font-size:clamp(7px,2.25vw,8.2px) !important;
+    line-height:1.2 !important;
+    letter-spacing:.02em !important;
+  }
+}
+@media(max-width:390px){
+  .hero-info{gap:6px !important;}
+  .hero-info__icon,
+  .hero-info__icon--can,
+  .hero-info__icon--glass,
+  .hero-info__icon--bag{
+    width:58px !important;
+    height:58px !important;
+  }
+}
