@@ -1894,3 +1894,124 @@
   .hero-info--text .hero-info__text span{font-size:8px !important;}
   .hero-info--text .hero-info__text em{font-size:7.5px !important;}
 }
+
+/* v1.2.8: hero info typography + navigation brand final adjustment */
+.hero-info--v128{
+  width:min(760px,100%) !important;
+  display:grid !important;
+  grid-template-columns:repeat(3,minmax(0,1fr)) !important;
+  gap:clamp(14px,2vw,26px) !important;
+  margin-top:clamp(24px,3svh,34px) !important;
+  padding:0 !important;
+  border:0 !important;
+  background:transparent !important;
+}
+.hero-info--v128 .hero-info__item{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  padding:0 !important;
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  min-height:0 !important;
+  text-align:left !important;
+}
+.hero-info--v128 .hero-info__text{
+  width:100% !important;
+  display:flex !important;
+  flex-direction:column !important;
+  align-items:flex-start !important;
+  gap:8px !important;
+  padding:0 !important;
+  margin:0 !important;
+  border:0 !important;
+  background:transparent !important;
+  box-shadow:none !important;
+  text-align:left !important;
+}
+.hero-info--v128 .hero-info__text em{
+  display:block !important;
+  color:var(--yellow) !important;
+  font-family:'Zen Kaku Gothic New','Noto Sans JP',sans-serif !important;
+  font-style:normal !important;
+  font-size:clamp(14px,1.35vw,20px) !important;
+  font-weight:900 !important;
+  line-height:1 !important;
+  letter-spacing:.02em !important;
+  text-shadow:0 0 12px rgba(255,212,0,.18) !important;
+}
+.hero-info--v128 .hero-info__label{
+  display:inline-flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  min-height:44px !important;
+  padding:9px 14px !important;
+  border:1px solid rgba(255,212,0,.42) !important;
+  background:rgba(0,0,0,.32) !important;
+  color:#fff7d8 !important;
+  font-family:'Zen Kaku Gothic New','Noto Sans JP',sans-serif !important;
+  font-size:clamp(10px,.88vw,13px) !important;
+  font-weight:900 !important;
+  line-height:1.18 !important;
+  letter-spacing:.1em !important;
+  text-align:center !important;
+  text-transform:uppercase !important;
+  white-space:normal !important;
+  clip-path:polygon(9px 0,100% 0,100% calc(100% - 9px),calc(100% - 9px) 100%,0 100%,0 9px) !important;
+  box-shadow:inset 0 0 18px rgba(255,212,0,.045),0 0 18px rgba(0,0,0,.22) !important;
+}
+.header-logo--text{
+  font-family:'Zen Kaku Gothic New','Noto Sans JP',sans-serif !important;
+  font-size:clamp(14px,1vw,16px) !important;
+  font-weight:700 !important;
+  letter-spacing:-.07em !important;
+  transform:translateY(1px) !important;
+}
+.header-logo__name{
+  letter-spacing:-.07em !important;
+}
+.header-logo__line{
+  width:28px !important;
+  margin-top:1px !important;
+  margin-bottom:0 !important;
+}
+.header-logo__since{
+  font-size:7px !important;
+  letter-spacing:.22em !important;
+  transform:translateX(1px) !important;
+}
+.site-header.is-scrolled .header-logo__line{
+  width:36px !important;
+}
+
+@media(max-width:900px){
+  .hero-info--v128{
+    width:min(480px,100%) !important;
+    grid-template-columns:1fr !important;
+    gap:12px !important;
+    margin-top:22px !important;
+  }
+  .hero-info--v128 .hero-info__item{
+    justify-content:center !important;
+    text-align:center !important;
+  }
+  .hero-info--v128 .hero-info__text{
+    align-items:center !important;
+    text-align:center !important;
+    gap:7px !important;
+  }
+  .hero-info--v128 .hero-info__text em{
+    font-size:14px !important;
+  }
+  .hero-info--v128 .hero-info__label{
+    min-width:210px !important;
+    min-height:38px !important;
+    padding:8px 12px !important;
+    font-size:10px !important;
+  }
+  .header-logo--text{
+    font-size:14px !important;
+    letter-spacing:-.06em !important;
+  }
+}
