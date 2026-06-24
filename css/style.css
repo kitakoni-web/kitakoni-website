@@ -2417,3 +2417,45 @@
     padding:2px 13px 0 !important;
   }
 }
+
+
+/* v1.3.4: optical vertical centering for HERO info text inside label boxes */
+.hero-info--v128 .hero-info__label{
+  padding:0 14px !important;
+  line-height:1 !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+.hero-info--v128 .hero-info__label-inner{
+  display:block !important;
+  line-height:1.06 !important;
+  transform:translateY(2px) !important;
+  text-align:center !important;
+}
+.hero-info--v128 .hero-info__item:nth-child(1) .hero-info__label{
+  height:40px !important;
+  min-height:40px !important;
+  padding:0 14px !important;
+}
+.hero-info--v128 .hero-info__item:nth-child(1) .hero-info__label-inner{
+  transform:translateY(2px) !important;
+  line-height:1.06 !important;
+}
+.hero-info--v128 .hero-info__item:nth-child(2) .hero-info__label,
+.hero-info--v128 .hero-info__item:nth-child(3) .hero-info__label{
+  height:32px !important;
+  min-height:32px !important;
+  padding:0 14px !important;
+}
+.hero-info--v128 .hero-info__item:nth-child(2) .hero-info__label-inner,
+.hero-info--v128 .hero-info__item:nth-child(3) .hero-info__label-inner{
+  transform:translateY(2px) !important;
+  line-height:1 !important;
+}
+@media(max-width:900px){
+  .hero-info--v128 .hero-info__item:nth-child(1) .hero-info__label{height:38px !important;min-height:38px !important;}
+  .hero-info--v128 .hero-info__item:nth-child(2) .hero-info__label,
+  .hero-info--v128 .hero-info__item:nth-child(3) .hero-info__label{height:31px !important;min-height:31px !important;}
+  .hero-info--v128 .hero-info__label-inner{transform:translateY(2px) !important;}
+}
