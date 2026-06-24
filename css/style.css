@@ -2378,3 +2378,42 @@
     min-width:170px !important;
   }
 }
+
+/* v1.3.3: final vertical optical centering for HERO info labels */
+.hero-info--v128 .hero-info__label{
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+  text-align:center !important;
+  box-sizing:border-box !important;
+  vertical-align:middle !important;
+  font-variant-ligatures:none !important;
+}
+.hero-info--v128 .hero-info__item:nth-child(1) .hero-info__label{
+  min-height:40px !important;
+  height:40px !important;
+  padding:2px 14px 0 !important;
+  line-height:1.06 !important;
+  white-space:normal !important;
+}
+.hero-info--v128 .hero-info__item:nth-child(2) .hero-info__label,
+.hero-info--v128 .hero-info__item:nth-child(3) .hero-info__label{
+  min-height:32px !important;
+  height:32px !important;
+  padding:2px 14px 0 !important;
+  line-height:1 !important;
+  white-space:nowrap !important;
+}
+@media(max-width:900px){
+  .hero-info--v128 .hero-info__item:nth-child(1) .hero-info__label{
+    min-height:38px !important;
+    height:38px !important;
+    padding:2px 13px 0 !important;
+  }
+  .hero-info--v128 .hero-info__item:nth-child(2) .hero-info__label,
+  .hero-info--v128 .hero-info__item:nth-child(3) .hero-info__label{
+    min-height:31px !important;
+    height:31px !important;
+    padding:2px 13px 0 !important;
+  }
+}
