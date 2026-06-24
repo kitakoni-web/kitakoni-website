@@ -1495,3 +1495,44 @@
   .hero__actions{margin-top:24px !important;gap:10px !important;}
   .hero__actions .btn{min-width:132px !important;min-height:42px !important;padding:0 14px !important;font-size:10px !important;}
 }
+
+
+/* v1.2.2 navigation refinement: use Japanese text brand and keep nav visible on hero */
+.site-header{
+  opacity:1 !important;
+  transform:none !important;
+  pointer-events:auto !important;
+  background:linear-gradient(180deg,rgba(0,0,0,.62),rgba(0,0,0,.28),transparent) !important;
+  border-bottom:0 !important;
+}
+.site-header.is-scrolled{
+  opacity:1 !important;
+  transform:none !important;
+  pointer-events:auto !important;
+  background:rgba(0,0,0,.82) !important;
+  backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--line-soft) !important;
+}
+.header-logo--text{
+  display:inline-flex;
+  align-items:center;
+  color:#fff2b8;
+  font-weight:900;
+  font-size:clamp(15px,1.2vw,18px);
+  letter-spacing:.18em;
+  line-height:1;
+  text-shadow:0 2px 14px rgba(0,0,0,.65),0 0 10px rgba(255,230,0,.12);
+  white-space:nowrap;
+}
+.header-logo--text span{
+  display:inline-block;
+}
+.header-logo--text:hover{
+  color:var(--yellow);
+}
+@media(max-width:900px){
+  .header-logo--text{
+    font-size:15px;
+    letter-spacing:.14em;
+  }
+}
