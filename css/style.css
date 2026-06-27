@@ -3365,3 +3365,54 @@ body[data-lang="en"] .en {
     margin-bottom: 7px !important;
   }
 }
+
+
+/* Instagram info-list v25 */
+.instagram-card-grid {
+  gap: 0 !important;
+  align-content: center !important;
+  border-top: 1px solid rgba(255,230,0,.18) !important;
+  border-bottom: 1px solid rgba(255,230,0,.18) !important;
+}
+
+.instagram-mini-card,
+.instagram-mini-card:first-child {
+  min-height: 0 !important;
+  padding: 20px 0 19px !important;
+  border: 0 !important;
+  border-bottom: 1px solid rgba(255,230,0,.12) !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  overflow: visible !important;
+}
+
+.instagram-mini-card:last-child {
+  border-bottom: 0 !important;
+}
+
+.instagram-mini-card::before,
+.instagram-mini-card::after {
+  content: none !important;
+}
+
+.instagram-mini-card__tag {
+  color: rgba(255,230,0,.78) !important;
+  font-size: 10px !important;
+  letter-spacing: .18em !important;
+  margin-bottom: 9px !important;
+}
+
+.instagram-mini-card h4 {
+  color: #fff7d8 !important;
+}
+
+.instagram-mini-card p {
+  max-width: 34em !important;
+}
+
+@media(max-width:900px) {
+  .instagram-mini-card,
+  .instagram-mini-card:first-child {
+    padding: 18px 0 17px !important;
+  }
+}
