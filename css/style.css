@@ -2785,3 +2785,19 @@ body[data-lang="en"] .en {
   content: none !important;
   display: none !important;
 }
+
+/* Hero desktop logo: align visual center with the Japanese copy text */
+@media(min-width:721px) {
+  .hero__brand {
+    justify-self: center !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    transform: translateX(-70px) !important;
+  }
+}
+
+@media(max-width:720px) {
+  .hero__brand {
+    transform: none !important;
+  }
+}
