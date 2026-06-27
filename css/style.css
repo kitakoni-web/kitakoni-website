@@ -3680,3 +3680,31 @@ body[data-lang="en"] .en {
     padding: 8px 18px 7px !important;
   }
 }
+
+/* Hero info label text: reset nested span styles that can clip glyphs */
+.hero .hero-info__item .hero-info__label .hero-info__label-inner,
+.hero .hero-info__item:nth-child(1) .hero-info__label .hero-info__label-inner,
+.hero .hero-info__item:nth-child(2) .hero-info__label .hero-info__label-inner,
+.hero .hero-info__item:nth-child(3) .hero-info__label .hero-info__label-inner {
+  display: block !important;
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  clip-path: none !important;
+  overflow: visible !important;
+  color: inherit !important;
+  font: inherit !important;
+  line-height: 1.18 !important;
+  letter-spacing: inherit !important;
+  transform: none !important;
+}
+
+.hero .hero-info__label br {
+  display: block !important;
+}
