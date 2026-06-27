@@ -2785,3 +2785,28 @@ body[data-lang="en"] .en {
   content: none !important;
   display: none !important;
 }
+
+/* Hero center alignment: place logo and copy on the viewport center */
+.hero__content {
+  grid-template-columns: 1fr !important;
+  grid-template-areas: "brand" "copy" "lead" "info" "actions" !important;
+  justify-items: center !important;
+  text-align: center !important;
+}
+
+.hero__brand {
+  justify-self: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero h1 {
+  justify-self: center !important;
+  text-align: center !important;
+}
+
+.hero__lead {
+  text-align: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
