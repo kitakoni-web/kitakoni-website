@@ -2825,3 +2825,24 @@ body[data-lang="en"] .en {
     min-height: 58px !important;
   }
 }
+
+/* Hero info boxes: keep all three border heights equal */
+.hero .hero-info__label,
+.hero .hero-info__item:nth-child(1) .hero-info__label,
+.hero .hero-info__item:nth-child(2) .hero-info__label,
+.hero .hero-info__item:nth-child(3) .hero-info__label {
+  height: 64px !important;
+  min-height: 64px !important;
+  display: grid !important;
+  place-items: center !important;
+}
+
+@media(max-width:720px) {
+  .hero .hero-info__label,
+  .hero .hero-info__item:nth-child(1) .hero-info__label,
+  .hero .hero-info__item:nth-child(2) .hero-info__label,
+  .hero .hero-info__item:nth-child(3) .hero-info__label {
+    height: 58px !important;
+    min-height: 58px !important;
+  }
+}
