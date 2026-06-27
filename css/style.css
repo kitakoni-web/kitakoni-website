@@ -3339,3 +3339,29 @@ body[data-lang="en"] .en {
     top: 15px !important;
   }
 }
+
+
+/* Instagram label alignment v24 */
+.instagram-mini-card,
+.instagram-mini-card:first-child {
+  align-content: center !important;
+}
+
+.instagram-mini-card__tag {
+  position: static !important;
+  display: block !important;
+  width: auto !important;
+  margin: 0 0 8px !important;
+  transform: none !important;
+  line-height: 1 !important;
+}
+
+.instagram-mini-card h4 {
+  margin-top: 0 !important;
+}
+
+@media(max-width:900px) {
+  .instagram-mini-card__tag {
+    margin-bottom: 7px !important;
+  }
+}
