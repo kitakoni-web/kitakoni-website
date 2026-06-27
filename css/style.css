@@ -2773,3 +2773,15 @@ body[data-lang="en"] .en {
     line-height: 1.55 !important;
   }
 }
+
+/* Hero logo and footer cleanup */
+.hero__brand {
+  justify-self: center !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.hero h1::after {
+  content: none !important;
+  display: none !important;
+}
