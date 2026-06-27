@@ -2692,3 +2692,84 @@ body[data-lang="en"] .en {
     padding: 0 10px !important;
   }
 }
+
+/* Hero first view: keep primary action buttons visible on common screens */
+.hero {
+  min-height: 100svh !important;
+  align-items: center !important;
+}
+
+.hero__content {
+  padding-top: calc(var(--header) + 8px) !important;
+  padding-bottom: clamp(18px, 4svh, 42px) !important;
+}
+
+.hero__brand {
+  max-height: clamp(78px, 14svh, 150px) !important;
+  width: auto !important;
+  margin-bottom: clamp(8px, 1.6svh, 18px) !important;
+}
+
+.hero h1 {
+  margin-top: 0 !important;
+  margin-bottom: clamp(10px, 1.7svh, 18px) !important;
+}
+
+.hero__lead {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  line-height: 1.65 !important;
+}
+
+.hero .hero-info {
+  margin-top: clamp(14px, 2svh, 24px) !important;
+}
+
+.hero .hero__actions {
+  margin-top: clamp(14px, 2svh, 24px) !important;
+}
+
+@media(max-height:700px) {
+  .hero__content {
+    padding-top: calc(var(--header) + 4px) !important;
+    padding-bottom: 18px !important;
+  }
+
+  .hero__brand {
+    max-height: 92px !important;
+    margin-bottom: 8px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(30px, 4.8vw, 56px) !important;
+    margin-bottom: 8px !important;
+  }
+
+  .hero__lead {
+    line-height: 1.5 !important;
+  }
+
+  .hero .hero-info,
+  .hero .hero__actions {
+    margin-top: 12px !important;
+  }
+}
+
+@media(max-width:720px) {
+  .hero__content {
+    padding-top: calc(var(--header) + 8px) !important;
+    padding-bottom: 18px !important;
+  }
+
+  .hero__brand {
+    max-height: 88px !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(28px, 8.2vw, 34px) !important;
+  }
+
+  .hero__lead {
+    line-height: 1.55 !important;
+  }
+}
