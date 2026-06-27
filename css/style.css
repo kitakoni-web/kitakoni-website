@@ -3155,3 +3155,36 @@ body[data-lang="en"] .en {
     width: 100%;
   }
 }
+
+/* Instagram showcase contrast polish */
+.instagram-panel--showcase {
+  background: linear-gradient(180deg,rgba(18,18,14,.92),rgba(4,4,4,.84)) !important;
+}
+
+.instagram-panel--showcase .instagram-panel__intro,
+.instagram-card-grid,
+.instagram-mini-card h4,
+.instagram-mini-card p,
+.instagram-mini-card__tag {
+  opacity: 1 !important;
+}
+
+.instagram-panel--showcase h3 {
+  color: #fff7d8 !important;
+  text-shadow: 0 4px 24px rgba(0,0,0,.72) !important;
+}
+
+.instagram-panel--showcase .instagram-panel__intro p:not(.instagram-label),
+.instagram-mini-card p {
+  color: #e4dec7 !important;
+}
+
+.instagram-mini-card {
+  border-color: rgba(255,230,0,.28) !important;
+  background: linear-gradient(180deg,rgba(255,230,0,.075),rgba(0,0,0,.42)) !important;
+}
+
+.instagram-mini-card__tag,
+.instagram-guide--feature p {
+  color: var(--yellow) !important;
+}
