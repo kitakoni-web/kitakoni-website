@@ -3188,3 +3188,54 @@ body[data-lang="en"] .en {
 .instagram-guide--feature p {
   color: var(--yellow) !important;
 }
+
+
+/* Version 2.2: Instagram showcase two-card balance */
+.instagram-panel--showcase .instagram-label {
+  display: none !important;
+}
+
+.instagram-card-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  align-content: center !important;
+  align-items: stretch !important;
+}
+
+.instagram-mini-card,
+.instagram-mini-card:first-child {
+  grid-row: auto !important;
+  min-height: 230px !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+  align-content: start !important;
+  gap: 10px !important;
+  padding: 24px !important;
+}
+
+.instagram-mini-card__tag {
+  position: relative !important;
+  left: auto !important;
+  top: auto !important;
+  display: block !important;
+  margin: 0 0 4px !important;
+}
+
+.instagram-mini-card h4 {
+  margin: 0 !important;
+}
+
+.instagram-mini-card p {
+  margin: 0 !important;
+}
+
+@media(max-width:900px) {
+  .instagram-card-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .instagram-mini-card,
+  .instagram-mini-card:first-child {
+    min-height: 150px !important;
+  }
+}
