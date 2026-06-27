@@ -2802,11 +2802,12 @@ body[data-lang="en"] .en {
   }
 }
 
-/* Hero cider label: center the ampersand line cleanly */
+/* Hero craft label: three centered lines */
 .hero .hero-info__item:nth-child(1) .hero-info__label {
   width: 148px !important;
-  padding-left: 12px !important;
-  padding-right: 12px !important;
+  height: 64px !important;
+  min-height: 64px !important;
+  padding: 0 12px !important;
 }
 
 .hero .hero-info__item:nth-child(1) .hero-info__label-inner {
@@ -2814,11 +2815,13 @@ body[data-lang="en"] .en {
   width: 100% !important;
   text-align: center !important;
   letter-spacing: .07em !important;
-  line-height: 1.2 !important;
+  line-height: 1.18 !important;
 }
 
 @media(max-width:720px) {
   .hero .hero-info__item:nth-child(1) .hero-info__label {
     width: 100% !important;
+    height: 58px !important;
+    min-height: 58px !important;
   }
 }
