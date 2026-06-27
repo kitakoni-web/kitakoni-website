@@ -2801,3 +2801,24 @@ body[data-lang="en"] .en {
     transform: none !important;
   }
 }
+
+/* Hero cider label: center the ampersand line cleanly */
+.hero .hero-info__item:nth-child(1) .hero-info__label {
+  width: 148px !important;
+  padding-left: 12px !important;
+  padding-right: 12px !important;
+}
+
+.hero .hero-info__item:nth-child(1) .hero-info__label-inner {
+  display: block !important;
+  width: 100% !important;
+  text-align: center !important;
+  letter-spacing: .07em !important;
+  line-height: 1.2 !important;
+}
+
+@media(max-width:720px) {
+  .hero .hero-info__item:nth-child(1) .hero-info__label {
+    width: 100% !important;
+  }
+}
