@@ -3650,3 +3650,78 @@ body[data-lang="en"] .en {
 .hours-column .kakuuchi-hours-panel::after {
   content: none !important;
 }
+
+
+/* Kakuuchi and access split layout v2.9.4 */
+.kakuuchi-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2,minmax(0,1fr));
+  gap: clamp(22px,3vw,34px);
+  align-items: stretch;
+}
+
+.kakuuchi-info-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100%;
+  padding: clamp(28px,3.4vw,42px);
+}
+
+.kakuuchi-info-card h3 {
+  margin: 0 0 14px;
+  color: #fff7d8;
+  font-size: clamp(22px,2.4vw,30px);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.kakuuchi-info-card p {
+  margin: 0;
+  color: #ded7bd;
+}
+
+.access-layout-grid {
+  display: grid;
+  grid-template-columns: minmax(0,1.25fr) minmax(300px,.75fr);
+  gap: clamp(24px,3vw,36px);
+  align-items: stretch;
+}
+
+.access-layout-grid .access-card {
+  min-height: 620px;
+}
+
+.access-hours-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.access-hours-title {
+  margin: 0 0 12px;
+  color: #fff7d8;
+  font-size: clamp(22px,2.4vw,30px);
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.access-hours-panel {
+  width: 100%;
+  padding: clamp(26px,3vw,36px);
+}
+
+.access-hours-panel .notice {
+  margin: 20px 0 0;
+}
+
+@media(max-width:900px) {
+  .kakuuchi-card-grid,
+  .access-layout-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .access-hours-column {
+    justify-content: flex-start;
+  }
+}
